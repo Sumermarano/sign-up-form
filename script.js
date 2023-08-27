@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 });
+
+function checkPass() {
+  const pass1 = document.getElementById("pass");
+  const pass2 = document.getElementById("conf-pass");
+  
+  if (pass1.value === pass2.value) {
+    return true;
+  } else {
+    return false;
+  }
+};
